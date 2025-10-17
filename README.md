@@ -411,6 +411,23 @@ This project is licensed under the MIT License - see the [LICENSE](https://www.g
 
 ![Midsummer's Bird Render Preview](https://files.catbox.moe/qzbjn9.jpg)
 
+
+
+---
+
+### ⚠️ **Important Note: Regarding Imported Content**
+
+Please be aware that `Midsummer's Bird` is a tool, and its import features (including but not limited to Character Cards, World Info, AI Presets, Chat Histories, etc.) are intended solely for users to manage and use content they **have the legal right to use**.
+
+**Before importing any file, you must ensure that you have permission from the original author, or that the file is distributed under an open-source license that permits its use.**
+
+Please respect the intellectual property and hard work of every creator. Do not import, use, or distribute original content from others without their explicit permission.
+
+---
+
+
+
+
 -----
 
 ## 💖 Acknowledgments
