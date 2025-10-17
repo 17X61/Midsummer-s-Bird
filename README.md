@@ -270,7 +270,7 @@ The following features are **NOT supported** in Midsummer's Bird:
 
 ## 📝 Changelog
 
-### v1.0.0 (2025-01-XX)
+### v1.0.0 (2025-10-17)
 
 #### 🎉 Initial Release
 
