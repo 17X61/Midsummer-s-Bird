@@ -98,7 +98,6 @@
 ### 快速开始
 
 1. **下载文件**
-   ```bash
   - [**➡️ 点击此处下载最新版 (v1.0.0)**](https://github.com/csjafuwvbegscbw-star/Midsummer-s-Bird/releases/download/v1.0.0/Midsummer.s.Bird.html)
     
 2. **打开应用**
