@@ -225,7 +225,7 @@ The following features are **NOT supported** in Midsummer's Bird:
 
 ### Render Preview
 
-\<video src="[https://files.catbox.moe/yljsp1.mp4](https://files.catbox.moe/yljsp1.mp4)" autoplay loop muted playsinline style="max-width: 720px;"\>\</video\>
+
 
 -----
 
