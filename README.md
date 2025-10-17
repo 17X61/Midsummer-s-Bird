@@ -3,8 +3,6 @@
   <a href="./README.md">English</a> | <a href="./README.zh.md">简体中文</a>
 </p>
 
------
-
 # Midsummer's Bird
 
 > An Elegant, Powerful, and Fully Localized AI Role-Playing Chat Frontend
@@ -111,21 +109,28 @@ This project is a **third-party independent implementation inspired by SillyTave
 ### Quick Start
 
 1.  **Download the file**
-    ```bash
-    # Download Midsummer's Bird.html
-    ```
+
+      - [**➡️ Click here to download the latest version (v1.0.0)**](https://github.com/csjafuwvbegscbw-star/Midsummer-s-Bird/releases/download/v1.0.0/Midsummer.s.Bird.html)
+
 2.  **Open the application**
+
       - Open the `Midsummer's Bird.html` file directly in your browser
       - Or, double-click the file to run it
+
 3.  **Configure your API**
+
       - Click on "API Settings" in the sidebar
       - Enter your API URL and API Key
       - Test the connection to ensure it's configured correctly
+
 4.  **Import a Character Card**
+
       - Click on "Character Card"
       - Import an existing character card file (supports .json and .png formats)
       - Or, create a new character
+
 5.  **Start chatting**
+
       - Select a character
       - Enter a message in the chatbox
       - Enjoy your conversation with the AI\!
@@ -221,11 +226,35 @@ The following features are **NOT supported** in Midsummer's Bird:
 
 ## 📸 Feature Screenshots
 
+### Main Interface
+
+  - Clean and elegant chat interface
+  - Streaming output for real-time response
+  - Sidebar for quick access to all features
+
+### API Settings
+
+  - Intuitive configuration management
+  - Support for multiple API configuration switching
+  - Independent vision API settings
+
+### Character Management
+
+  - Visual character editor
+  - Character preview cards
+  - One-click import and export
+
+### World Info
+
+  - Tree-structured World Info management
+  - Smart keyword matching
+  - Global and character-specific World Info
+
 ### Theme Customization
 
-### Render Preview
-
-
+  - 6 beautiful preset themes
+  - Custom CSS editor
+  - Real-time preview effects
 
 -----
 
@@ -241,7 +270,7 @@ The following features are **NOT supported** in Midsummer's Bird:
 
 ## 📝 Changelog
 
-### v1.0.0 (2025-10-17)
+### v1.0.0 (2025-01-XX)
 
 #### 🎉 Initial Release
 
@@ -371,6 +400,16 @@ This project is licensed under the MIT License - see the [LICENSE](https://www.g
 **THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
 
 **BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREED TO ALL THE DISCLAIMER TERMS ABOVE. IF YOU DO NOT AGREE WITH THESE TERMS, DO NOT USE THIS SOFTWARE.**
+
+## 📸 Feature Screenshots
+
+### Theme Customization
+
+![Midsummer's Bird Theme Customization](https://files.catbox.moe/5pg819.jpg)
+
+### Render Preview
+
+![Midsummer's Bird Render Preview](https://files.catbox.moe/qzbjn9.jpg)
 
 -----
 
