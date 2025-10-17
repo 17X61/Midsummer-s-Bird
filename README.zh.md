@@ -99,8 +99,8 @@
 
 1. **下载文件**
    ```bash
-   # 下载 Midsummer's Bird.html  https://github.com/csjafuwvbegscbw-star/Midsummer-s-Bird/releases/download/v1.0.0/Midsummer.s.Bird.html
-
+  - [**➡️ 点击此处下载最新版 (v1.0.0)**](https://github.com/csjafuwvbegscbw-star/Midsummer-s-Bird/releases/download/v1.0.0/Midsummer.s.Bird.html)
+    
 2. **打开应用**
    - 直接在浏览器中打开 `Midsummer's Bird.html` 文件
    - 或者双击文件即可运行
