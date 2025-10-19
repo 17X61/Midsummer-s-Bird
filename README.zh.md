@@ -415,3 +415,30 @@
 
 **Enjoy your conversation with AI! 🎭✨**
 
+---
+
+## 🚧 Flutter 复刻版（预览）
+
+本仓库现已包含一个基于 Flutter 的完整复刻（进行中），沿用 OpenAI 风格的简洁美学（不使用渐变色），支持移动与桌面自适应布局。
+
+- 路径：midsummers_bird_flutter/
+- 状态：已实现核心聊天、流式输出、API 配置、预设、角色、主题、正则流水线、世界书框架、中英双语切换
+
+### 运行方式
+
+1) 安装 Flutter SDK（建议 3.22+）
+2) cd midsummers_bird_flutter
+3) flutter pub get
+4) flutter run -d chrome（或你偏好的设备）
+
+### 亮点
+
+- Material 3 + 极简 OpenAI 风格（无渐变）
+- OpenAI 兼容 SSE 实时流；Gemini 基础支持
+- 本地 JSON 持久化（应用文档目录）
+- 侧栏管理器：API、角色、AI 预设、世界书、正则、主题、用户
+- 输入/输出双向正则流水线
+- 英文/中文即时切换
+
+后续将继续完善：角色卡导入/导出（V2/V3）、图片消息、世界书编辑器、聊天工具（编辑/重试/总结）等。
+

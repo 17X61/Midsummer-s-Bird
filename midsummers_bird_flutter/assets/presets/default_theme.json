@@ -1,0 +1,27 @@
+{
+  "name": "OpenAI Minimal",
+  "light": {
+    "background": "#FFFFFF",
+    "surface": "#F5F7FB",
+    "textPrimary": "#0F172A",
+    "textSecondary": "#475569",
+    "primary": "#2563EB",
+    "secondary": "#0EA5E9",
+    "divider": "#E2E8F0",
+    "chip": "#E5E7EB",
+    "messageAI": "#F1F5F9",
+    "messageUser": "#DDEBFF"
+  },
+  "dark": {
+    "background": "#0B1220",
+    "surface": "#0F172A",
+    "textPrimary": "#E2E8F0",
+    "textSecondary": "#94A3B8",
+    "primary": "#60A5FA",
+    "secondary": "#38BDF8",
+    "divider": "#1F2937",
+    "chip": "#111827",
+    "messageAI": "#0B1324",
+    "messageUser": "#0D213C"
+  }
+}
