@@ -452,3 +452,30 @@ If you find this project useful, please give it a ⭐️ Star\!
 -----
 
 **Enjoy your conversation with AI\! 🎭✨**
+
+-----
+
+## 🚧 Flutter Replica (Preview)
+
+This repository now also contains an in-progress full Flutter replica of the single-file HTML app, designed with an OpenAI-inspired, clean aesthetic (no gradients) and a mobile/desktop responsive layout.
+
+- Path: midsummers_bird_flutter/
+- Status: Core chat, streaming, API config, presets, characters, themes, regex pipelines, world info scaffolding, bilingual UI toggle
+
+### Run
+
+1) Install Flutter SDK (3.22+ recommended)
+2) cd midsummers_bird_flutter
+3) flutter pub get
+4) flutter run -d chrome  (or your preferred device)
+
+### Highlights
+
+- Material 3 with minimalist OpenAI-like styling
+- Real-time streaming via OpenAI-compatible SSE; Gemini basic support
+- Local JSON persistence to app documents directory
+- Managers as side sheets: API, Characters, AI Presets, World Info, Regex, Theme, Users
+- Regex pipelines on input and output
+- English/中文 instant switching
+
+Future work will expand parity: character card import/export (V2/V3), image messages, advanced world info editing UI, and chat tools (edit/regenerate/summarization).

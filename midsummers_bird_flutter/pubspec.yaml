@@ -1,0 +1,36 @@
+name: midsummers_bird_flutter
+version: 0.1.0+1
+description: "A full Flutter replica of the 'Midsummer's Bird' AI role-play chat SPA with OpenAI aesthetic (no gradients)."
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.4
+  intl: ^0.19.0
+  flutter_markdown: ^0.7.3+1
+  url_launcher: ^6.3.1
+
+  # Optional UX helpers
+  collection: ^1.18.0
+
+# Dev dependencies avoided to keep simple within this repository
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/presets/default_data.json
+    - assets/presets/default_theme.json

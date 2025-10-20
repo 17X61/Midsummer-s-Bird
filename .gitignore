@@ -1,0 +1,60 @@
+# Flutter/Dart/Pub related
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/generated_plugin_registrant.dart
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/app/key.properties
+**/android/app/*.keystore
+**/android/app/*.jks
+
+# iOS/macOS
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/*.xccheckout
+**/ios/*.moved-aside
+**/ios/DerivedData/
+**/ios/.symlinks/
+**/ios/Pods/
+**/ios/.generated/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+
+# Web
+**/web/.dart_tool/
+**/web/.flutter/
+
+# Linux/Windows
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# Misc
+.pubignore
+*.lock
+
+# Node-related (if any auxiliary tooling is added)
+node_modules/

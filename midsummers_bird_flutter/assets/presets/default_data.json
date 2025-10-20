@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": "default",
+      "name": "Player",
+      "persona": "A curious and kind person.",
+      "language": "en",
+      "preferences": {
+        "autoSave": true,
+        "streaming": true,
+        "showTimestamps": true
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "bird",
+      "name": "Midsummer's Bird",
+      "persona": "An enigmatic guide who speaks with warmth and brevity.",
+      "greeting": "The cicadas sing. What do you seek today?",
+      "greetings": [
+        "The leaves whisper. Tell me your thoughts.",
+        "I was listening. Would you like to begin?"
+      ],
+      "image": null
+    }
+  ],
+  "aiPresets": [
+    {
+      "id": "balanced",
+      "name": "Balanced",
+      "description": "Good default sampling values for most role-play.",
+      "temperature": 0.8,
+      "topP": 0.95,
+      "presencePenalty": 0.5,
+      "frequencyPenalty": 0.2,
+      "maxTokens": 1024
+    }
+  ],
+  "worldInfo": [],
+  "regexRules": [],
+  "api": {
+    "provider": "openai-compat",
+    "baseUrl": "https://api.openai.com/v1",
+    "apiKey": "",
+    "model": "gpt-4o-mini",
+    "timeoutMs": 60000
+  },
+  "sessions": []
+}
