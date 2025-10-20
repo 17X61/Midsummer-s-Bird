@@ -5,6 +5,7 @@ import '../app_state.dart';
 import '../models/chat.dart';
 import '../models/character.dart';
 import '../models/ai_preset.dart';
+import '../services/api_client.dart';
 import 'side_sheet.dart';
 
 class SidePanel extends StatelessWidget {

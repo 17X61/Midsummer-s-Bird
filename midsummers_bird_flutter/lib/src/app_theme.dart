@@ -43,10 +43,13 @@ ThemeData buildLightTheme(AppThemeSpec spec) {
       elevation: 0,
       foregroundColor: colorScheme.onBackground,
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: colorScheme.surface,
       elevation: 0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: parse('divider', '#E2E8F0'))),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: parse('divider', '#E2E8F0')),
+      ),
     ),
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide(color: parse('divider', '#E2E8F0'))),
@@ -83,10 +86,13 @@ ThemeData buildDarkTheme(AppThemeSpec spec) {
       elevation: 0,
       foregroundColor: colorScheme.onBackground,
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: colorScheme.surface,
       elevation: 0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: parse('divider', '#1F2937'))),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: parse('divider', '#1F2937')),
+      ),
     ),
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide(color: parse('divider', '#1F2937'))),
