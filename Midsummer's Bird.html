@@ -73,10 +73,19 @@
             color: var(--primary-color);
         }
 
+        /* Utility classes to map to CSS variables for Tailwind-like usage */
+        .text-primary-color { color: var(--primary-color) !important; }
+        .hover\:text-primary-color:hover { color: var(--primary-color) !important; }
+        .hover\:text-primary-hover-color:hover { color: var(--primary-hover-color) !important; }
+        .bg-primary-color { background-color: var(--primary-color) !important; }
+        .border-primary-color { border-color: var(--primary-color) !important; }
+        .accent-primary-color { accent-color: var(--primary-color); }
+
         .primary-gradient-text {
-            background: linear-gradient(135deg, var(--primary-color), #a3a1d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background: none;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            color: var(--primary-color);
         }
         
         .btn-primary {
@@ -620,7 +629,7 @@
                             <i class="fas fa-bars text-xl"></i>
                         </button>
                         <img id="char-avatar-header" src="https://placehold.co/40x40/5E5B9D/ffffff?text=AI" class="w-10 h-10 rounded-full object-cover">
-                        <h2 id="char-name-header" class="text-xl font-bold">No Character Loaded</h2>
+                        <h2 id="char-name-header" class="text-xl font-bold" data-i18n="char.noSelect">未选择角色</h2>
                     </div>
                     <button id="reselect-greeting-btn" class="btn-secondary px-3 py-2 rounded-lg hover:bg-gray-300 transition-colors text-sm" data-i18n-title="chat.reselectGreeting" title="重新选择开场白">
                         <i class="fas fa-redo mr-1"></i><span data-i18n="chat.reselectGreeting">重选开场白</span>
@@ -1592,7 +1601,7 @@
                         <textarea id="custom-css-editor" class="w-full h-96 light-input rounded-md p-3 font-mono text-sm resize-y" data-i18n-placeholder="theme.customCSSPlaceholder" placeholder="/* 输入你的自定义CSS */
 /* 例如: */
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--bg-color);
 }
 
 .card {
@@ -1601,7 +1610,7 @@ body {
 }
 
 .chat-bubble.user-bubble {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--user-bubble-color);
 }"></textarea>
                         <div class="mt-2 text-xs text-gray-500" data-i18n="theme.customCSSHint">
                             提示：可以覆盖所有现有的CSS变量和类。实时预览查看效果。
@@ -2717,7 +2726,17 @@ body {
             setLanguage(lang) {
                 this.currentLang = lang;
                 localStorage.setItem('app_language', lang);
+                document.documentElement.setAttribute('lang', lang);
                 this.updatePageTexts();
+                try {
+                    if (typeof updateApiSelect === 'function' && typeof api !== 'undefined' && api.savedSelect) {
+                        const selected = api.savedSelect.value;
+                        updateApiSelect();
+                        api.savedSelect.value = selected || '';
+                    }
+                } catch (e) {
+                    console.warn('语言切换时更新API下拉失败:', e);
+                }
             },
 
             // 更新页面所有文本
@@ -2749,6 +2768,7 @@ body {
             init() {
                 const savedLang = localStorage.getItem('app_language') || 'zh';
                 this.currentLang = savedLang;
+                document.documentElement.setAttribute('lang', savedLang);
                 // 页面加载完成后更新文本
                 if (document.readyState === 'loading') {
                     document.addEventListener('DOMContentLoaded', () => this.updatePageTexts());
@@ -3149,7 +3169,7 @@ body {
             }
 
             function updateApiSelect() {
-                api.savedSelect.innerHTML = '<option value="">选择配置</option>';
+                api.savedSelect.innerHTML = `<option value="">${i18n.t('api.selectConfig')}</option>`;
                 Object.keys(api.configs).forEach(id => {
                     const option = document.createElement('option');
                     option.value = id;
@@ -4079,7 +4099,7 @@ body {
                     char.activeCharacterId = null;
                     await idbStorage.removeItem('active_character_v2');
                     updateCharPreviewCard();
-                    document.getElementById('char-name-header').textContent = 'No Character Loaded';
+                    document.getElementById('char-name-header').textContent = i18n.t('char.noSelect');
                     document.getElementById('char-avatar-header').src = 'https://placehold.co/40x40/5E5B9D/ffffff?text=AI';
                     await loadWiData(null);
                     await loadRegexData([], false);
@@ -8223,7 +8243,7 @@ You must structure your entire output strictly in the following format, without 
                 },
 
                 loadPreferences() {
-                    const currentUser = userManager.getCurrentUser();
+                    const currentUser = userManagement.getCurrentUser();
                     if (!currentUser) return;
 
                     // Load language
@@ -8238,7 +8258,7 @@ You must structure your entire output strictly in the following format, without 
                 },
 
                 savePreferences() {
-                    const currentUser = userManager.getCurrentUser();
+                    const currentUser = userManagement.getCurrentUser();
                     if (!currentUser) {
                         alert('请先选择一个用户！');
                         return;
@@ -8258,7 +8278,7 @@ You must structure your entire output strictly in the following format, without 
                     document.getElementById('user-auto-announce').checked = currentUser.autoAnnounce;
                     document.getElementById('user-show-typing').checked = currentUser.showTyping;
 
-                    userManager.saveUsers();
+                    userManagement.saveUsers();
                     alert('偏好设置已保存！');
                 }
             };
